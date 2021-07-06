@@ -102,7 +102,7 @@ void ui_refresh(void)
   }
 }]]
 
-  it('can change the language of the parser', function()
+  it('get_parser() changes the language of the parser', function()
     local res = exec_lua([[
       parser = vim.treesitter.get_parser(0, "c")
       return parser:lang()
